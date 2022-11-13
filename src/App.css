@@ -1,14 +1,7 @@
 body {
-  background-color: rgb(24, 24, 24);
+  background-color: rgb(31, 28, 28);
   height: 100%;
   color: white;
-}
-.ReactTable {
-  background-color: rgb(34, 34, 34);
-  border-color: rgb(255, 255, 255);
-  margin: 50px 15px 15px;
-  color: rgb(209, 203, 195);
-  text-align: center;
 }
 
 
@@ -17,5 +10,11 @@ header {
   font-size: xxx-large;
   text-align: center;
   font-weight:lighter;
-  color: rgb(223, 223, 209);
+  color: rgb(166, 166, 188);
+}
+
+.ag-theme-material-dark {
+  width: 80%;
+  height: 1000px;
+  margin-left: 20%;
 }

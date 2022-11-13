@@ -5,7 +5,7 @@ import 'ag-grid-community/dist/styles/ag-theme-material.css';
 import Addcar from './AddCar';
 import Editcar from './EditCar'
 import Button from '@mui/material/Button';
-import '../App.css'
+import '../App.css';
 
 export default function Carlist() {
    const [cars, setCars] = useState([]);
@@ -25,14 +25,14 @@ export default function Carlist() {
       {field: "color", sortable: true, filter: true },
       {field: "fuel", sortable: true, filter: true },
       {field: "year", sortable: true, filter: true },
-      {field: "price", sortable: true, filter: true},
+      {field: "price", sortable: true, filter: true, width:70},
       {headerName: '', field: '_links.self.href', width: 80, 
       cellRendererFramework: params =>
          <Editcar link={params.value} car={params.data} editCar={editCar}/>
       },
-      {headerName: '', field: '_links.self.href', width: 80,
+      {headerName: '', field: '_links.self.href', width: 100,
       cellRendererFramework: params =>
-         <Button style={{margin: '10px'}} variant="outlined" onClick={() => deleteCar(params.value)}>
+         <Button style={{margin: '10px', color:"red"}} variant="outlined" onClick={() => deleteCar(params.value)}>
             Delete 
          </Button>
       }
@@ -75,8 +75,7 @@ export default function Carlist() {
    
 
    return(
-      <div className="ag-theme-material"
-      style={{height: '700px', width: '70%', margin: 'auto'}}>
+      <div className="ag-theme-material-dark">
       <Addcar saveCar={saveCar}/>
       <AgGridReact
          ref={gridRef}

@@ -38,12 +38,11 @@ export default function Addcar(props) {
          <Button style={{margin: '10px'}} variant="outlined" onClick={handleClickOpen}>
             Add Car
          </Button>
-         <Dialog open={open} onClose={handleClose}>
-            <DialogTitle>New Car</DialogTitle>
+         <Dialog open={open} onClose={handleClose}  style={{width:'15%', margin:'auto'}}>
+            <DialogTitle style={{textAlign:"center", fontWeight:"bold", color:"darkblue"}}>Add a New Car</DialogTitle>
+            <a style={{textAlign:"center"}}>List below <br></br>all the qualities of the car</a>
             <DialogContent>
                <TextField
-                  autoFocus
-                  margin="dense"
                   name="brand"
                   value={car.brand}
                   onChange={e => handleInputChange(e)}
@@ -52,16 +51,13 @@ export default function Addcar(props) {
                   variant="standard"
                   />
                <TextField
-                  margin="dense"
                   name="model"
                   value={car.model}
                   onChange={e => handleInputChange(e)}
                   label="Model"
-                  fullWidth
                   variant="standard"
                   />
                <TextField
-                  margin="dense"
                   name="color"
                   value={car.color}
                   onChange={e => handleInputChange(e)}
@@ -70,35 +66,29 @@ export default function Addcar(props) {
                   variant="standard"
                   />  
                <TextField
-                  margin="dense"
                   name="fuel"
                   value={car.fuel}
                   onChange={e => handleInputChange(e)}
                   label="Fuel"
-                  fullWidth
                   variant="standard"
                   />
                <TextField
-                  margin="dense"
                   name="year"
                   value={car.year}
                   onChange={e => handleInputChange(e)}
                   label="Year"
-                  fullWidth
                   variant="standard"
                   />
                <TextField
-                  margin="dense"
                   name="price"
                   value={car.price}
                   onChange={e => handleInputChange(e)}
                   label="Price"
-                  fullWidth
                   variant="standard"
                   />
             </DialogContent>
-            <DialogActions>
-               <Button onClick={handleClose}>Cancel</Button>
+            <DialogActions style={{margin:'auto'}}>
+               <Button onClick={handleClose} style={{color:'red'}}>Cancel</Button>
                <Button onClick={addCar}>Save</Button>
             </DialogActions>
          </Dialog>
