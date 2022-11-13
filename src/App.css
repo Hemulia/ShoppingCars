@@ -6,13 +6,16 @@ body {
 .ReactTable {
   background-color: rgb(34, 34, 34);
   border-color: rgb(255, 255, 255);
-  margin: 30px 15px 15px;
+  margin: 50px 15px 15px;
+  color: rgb(209, 203, 195);
+  text-align: center;
 }
 
+
 header {
-  margin-top: 2%;
+  margin-top: 4%;
   font-size: xxx-large;
   text-align: center;
   font-weight:lighter;
-  color: rgb(244, 244, 224);
+  color: rgb(223, 223, 209);
 }
