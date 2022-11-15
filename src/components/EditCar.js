@@ -44,11 +44,11 @@ export default function Editcar(props) {
 
    return(
       <div>
-         <Button style={{margin: '10px'}} variant="outlined" onClick={handleClickOpen}>
+         <Button style={{padding: '5px'}} variant="outlined" onClick={handleClickOpen}>
             Edit 
          </Button>
          <Dialog open={open} onClose={handleClose} style={{width:'15%', margin:'auto'}}>
-            <DialogTitle>Edit Selected Car</DialogTitle>
+            <DialogTitle>Edit Selected car</DialogTitle>
             <DialogContent>
                <TextField
                   name="brand"

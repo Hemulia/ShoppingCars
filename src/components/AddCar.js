@@ -35,11 +35,11 @@ export default function Addcar(props) {
   
    return(
       <div>
-         <Button style={{margin: '10px'}} variant="outlined" onClick={handleClickOpen}>
+         <Button style={{margin: '10px',  color:"green", borderColor:"green"}} variant="outlined" onClick={handleClickOpen}>
             Add Car
          </Button>
          <Dialog open={open} onClose={handleClose}  style={{width:'15%', margin:'auto'}}>
-            <DialogTitle style={{textAlign:"center", fontWeight:"bold", color:"darkblue"}}>Add a New Car</DialogTitle>
+            <DialogTitle style={{textAlign:"center", fontWeight:"bold"}}>Add a New Car</DialogTitle>
             <a style={{textAlign:"center"}}>List below <br></br>all the qualities of the car</a>
             <DialogContent>
                <TextField

@@ -1,20 +1,28 @@
 body {
-  background-color: rgb(31, 28, 28);
+  background-color: rgb(190, 190, 190);
   height: 100%;
   color: white;
 }
 
 
 header {
-  margin-top: 4%;
+
   font-size: xxx-large;
   text-align: center;
   font-weight:lighter;
-  color: rgb(166, 166, 188);
+  color: rgb(207, 207, 207);
 }
 
 .ag-theme-material-dark {
   width: 80%;
   height: 1000px;
   margin-left: 20%;
+}
+
+.columns {
+  outline: solid red;
+}
+
+.GridHeaderComp {
+  margin-bottom: 15px;
 }
